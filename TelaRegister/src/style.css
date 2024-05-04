@@ -56,6 +56,14 @@ h1 {
     color: black;
     padding: 20px 45px 20px 20px;
  }
+
+ #error-message{
+    margin-top: 3px;
+    text-align: center;
+    color: rgb(80, 46, 173);
+    text-decoration: underline;
+ }
+
  .input-wrapper img{
     position: absolute;
     right: 24px;

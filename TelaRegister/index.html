@@ -17,14 +17,15 @@
                     src="https://img.icons8.com/windows/32/user-male-circle.png" alt="user-male-circle" />
             </div>
             <div class="input-wrapper">
-                <input placeholder="Digite sua senha" type="password" required>
+                <input id="password" placeholder="Digite sua senha" type="password" required >
                 <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/password.png"
                     alt="password" />
             </div>
-            <div class="input-wrapper">
-                <input placeholder="Repita sua senha" type="password" required>
+            <div class="input-wrapper" >
+                <input id="password-confirm" placeholder="Repita sua senha" type="password" required>
                 <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/password.png"
                     alt="password" />
+                <div id="error-message"></div>
             </div>
     <button type="submit" class="submit-button">Criar conta</button>
 
@@ -34,6 +35,7 @@
 
     </form>
     </div>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
