@@ -8,12 +8,13 @@
 }
 /* Corpo do DOM */
 body {
-    background-image: url("/ProjetosPessoais/TelaLogin/img/purple_clouds.jpeg");
+    background-image: url("/Projetos-Pessoais/TelaLogin/img/purple_clouds.jpeg");
     min-height: 100vh;
     width: 100%;
     background-size: 100%;
     position: relative;
     /* Abaixo executava a animação feita na linha: 129  */
+    /* background: linear-gradient(-45deg, #1d0878, #8c00ff, #740f6e, #1c636d); */
     /* animation: backgroundTransition 16s ease-in-out infinite;  */
     display: flex;
     align-items: center;
@@ -27,7 +28,7 @@ body {
     background: transparent;
     border: 2px solid #9b9b9b ;
     backdrop-filter: blur(20px);
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 30px 40px;
 }
 
@@ -44,7 +45,7 @@ h1 {
     height: 50px;
     margin: 45px 0;
 }
-/* Elemento imput */
+/* Elemento input */
 .input-wrapper input {
     width: 100%;
     height: 100%;
