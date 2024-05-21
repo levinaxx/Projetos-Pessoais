@@ -9,22 +9,12 @@ Calculadora
 
 Jogo da Velha (Tic-Tac-Toe)
 
-Relógio Digital
+Cronometro
 
 Galeria de Imagens
 
-Gerador de Piadas ou Citações Aleatórias
+Animação com Css
 
 Formulário de Contato
-
-Conversor de Temperatura
-
-Aplicativo de Notas (Notes App)
-
-Simulador de Loja Online
-
-Cronômetro (Timer)
-
-Previsão do Tempo
 
 ## Espero que eu consiga fazer tudo :)
