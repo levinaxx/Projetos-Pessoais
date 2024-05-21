@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anek Devanagari", sans-serif;
+  outline: none;
+}
+
+body {
+  background-image: url("/Projetos-Pessoais/MiniProjetinhos/ToDo_List/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Container Styles */
+.container {
+  background-color: rgb(53, 96, 133);
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto 0;
+}
+
+/* Task Styles */
+.task {
+  background-color: burlywood;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  border-radius: 10px;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+
+/* Input Task Styles */
+.input-task {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+img {
+  height: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* Button Styles */
+.btn-add-task {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  background-color: rgb(12, 116, 177);
+  color: white;
+  font-size: 17px;
+  padding: 0 15px;
+  float: right;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-add-task:hover {
+  opacity: 0.8;
+}
+
+.btn-add-task:active {
+  opacity: 0.6;
+}
+
+/* List Styles */
+.list-tasks {
+  width: 100%;
+  list-style: none;
+  margin-top: 30px;
+}
+
+
+.done{
+    background-color: aqua;
+    text-decoration: line-through;
+}
