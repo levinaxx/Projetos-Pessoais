@@ -11,10 +11,10 @@ Jogo da Velha (Tic-Tac-Toe)
 
 ~~Cronometro~~
 
-Galeria de Imagens
+~~Galeria de Imagens~~
 
 Animação com Css
 
-Formulário de Contato
+~~Formulário de Contato~~
 
 ## Espero que eu consiga fazer tudo :)
