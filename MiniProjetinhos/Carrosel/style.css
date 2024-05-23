@@ -1,43 +1,302 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Anek Devanagari", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Anek Devanagari", sans-serif;
 }
 
-body{
-    background-color: #000;
-    color: #eee;
-    font-size: 12px;
+body {
+  background-color: #000;
+  color: #eee;
+  font-size: 12px;
+  overflow: hidden;
 }
 
-header{
-    width: 80%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-    margin: auto;
-}
- 
-header a{
-    color: #eee;
-    margin-right: 40px;
-    font-weight: 300;
+header {
+  width: 80%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin: auto;
 }
 
-.container{
-    height: 100vh;
-    width: 100vw;
-    margin-top: -50px;
-    overflow: hidden;
-
+header a {
+  color: #eee;
+  margin-right: 40px;
+  font-weight: 300;
+}
+a {
+  color: inherit;
 }
 
-.container .list .list-item{
-    
+.container {
+  height: 100vh;
+  width: 100vw;
+  margin-top: -50px;
+  overflow: hidden;
+}
+
+.container .list .list-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container .list .list-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+.container .list .list-item .content {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  padding-right: 30%;
+  width: 80%;
+  color: #eee;
+  text-shadow: 0 5px 10px #0004;
+}
+
+.container .list .list-item .title {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.container .list .list-item .description {
+  font-size: 1.5em;
+}
+
+.container .list .list-item .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 130px);
+  grid-template-rows: 50px;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.container .list .list-item .buttons button {
+  border: none;
+  background-color: #8a8080;
+  letter-spacing: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.container .list .list-item .buttons button:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: #eee;
+  transition: 0.7s;
+}
+
+.container .list .list-item .buttons button:nth-child(2) {
+  background-color: transparent;
+  border: 1px solid #eee;
+  color: #eee;
+}
+.container .list .list-item .buttons button:nth-child(2):hover {
+  background-color: #8a8080;
+  color: black;
+}
+
+.container .thumb {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+.container .thumb .thumb-item {
+  width: 135px;
+  height: 200px;
+  position: relative;
+  z-index: 3;
+}
+
+.container .thumb .thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+
+.container .thumb .content {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.container .arrows {
+  display: flex;
+  position: absolute;
+  bottom: 120px;
+  left: 125px;
+  width: 300px;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .arrows button {
+  border-radius: 10px;
+  border: none;
+  background-color: #eee4;
+  color: #eee;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5em;
+  padding: 12px 17px;
+}
+
+.container .arrows button:hover {
+  background-color: #eee;
+  color: #000;
+  transition: 0.7s;
+}
+
+/* Thumb Movement */
+
+.container.next .thumb {
+  animation: effectNextThumb 0.2s linear 1 forwards;
+}
+
+@keyframes effectNextThumb {
+  from {
+    transform: translateX(150px);
+  }
+}
+
+/* Movement Las Thumb */
+
+.container.next .thumb .thumb-item:nth-last-child(1) {
+  animation: effectLastThumb 0.3s linear 1 forwards;
+}
+
+@keyframes effectLastThumb {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+/* Main Text */
+
+.container .list .list-item:nth-last-child(1) .content .title,
+.container .list .list-item:nth-last-child(1) .content .description,
+.container .list .list-item:nth-last-child(1) .content .buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.3s 0.5s linear forwards;
+}
+
+@keyframes showContent {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.container .list .list-item:nth-last-child(1) .content .title {
+  animation-delay: 0.6s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .description {
+  animation-delay: 1.7s;
+}
+
+.container .list .list-item:nth-last-child(1) .content .buttons {
+  animation-delay: 2s;
+}
+
+/* imamgem principal next */
+
+.container.next .list .list-item:nth-last-child(1) img {
+  width: 150px;
+  height: 220px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  border-radius: 30px;
+  animation: showMainImage 0.3s linear 1 forwards;
+}
+
+@keyframes showMainImage {
+  to {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+/* imamgem principal back */
+
+.container.back .list .list-item:nth-child(1) img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: hideMainImage 0.3s linear 1 forwards;
+  z-index: 2;
+}
+
+@keyframes hideMainImage {
+  to {
+    width: 135px;
+    height: 200px;
+    border-radius: 10px;
+    left: 50%;
+    bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  header a {
+    margin-right: 10px;
+  }
+
+  .container .list .list-item .content {
+    top: 5%;
+    right: 5%;
+    bottom: 10%;
+    left: 5%;
+  }
+
+  .container .list .list-item .buttons {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .container .thumb .thumb-item {
+    width: 25%;
+    max-width: 100px;
+  }
+
+  .container .arrows {
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .container .arrows button {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
 }
