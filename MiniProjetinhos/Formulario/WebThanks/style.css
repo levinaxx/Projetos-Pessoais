@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anek Devanagari", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    197deg,
+    rgba(69, 170, 171, 1) 34%,
+    rgba(59, 109, 128, 1) 86%
+  );
+  background-size: 1000000000000px;
+  
+}
+
+form, div {
+  background-color: rgba(248, 248, 248, 0.815);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+input,
+textarea {
+  border: 1px solid #c1c1c1;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 200px;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background: rgba(133, 3, 255, 0.705);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+h1, p{
+  text-align: center;
+  padding: 20px;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid rgba(3, 255, 150, 0.705);
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 95%;
+    margin: 50px auto;
+  }
+
+  input,
+  textarea {
+    max-width: 100%;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
