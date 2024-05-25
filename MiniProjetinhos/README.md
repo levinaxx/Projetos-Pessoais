@@ -7,7 +7,7 @@
 
 Calculadora
 
-Jogo da Velha (Tic-Tac-Toe)
+~~Jogo da Velha (Tic-Tac-Toe)~~
 
 ~~Cronometro~~
 
