@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoVogue</title>
+  <link rel="shortcut icon" type="image/jpg" href="./images/logosite.jpeg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="nav2">
+  <span>Frete grátis acima de R$500</span>
+</div>
+
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="./images/logo.jpeg" alt="EcoVogue Logo" />
+  </div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#produtos-ir">Produtos</a></li>
+      <li><a href="#">Promoções</a></li>
+      <li><a href="#">Coleções</a></li>
+      <li><a href="#ir">Sobre nós</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="close-btn">X</div>
+  </nav>
+  <div class="account-cart">
+    <a href="#"><img src="./images/user.png" alt="Entrar" />Entrar</a>
+    <a href="#" id="cart-icon">
+      <img src="images/cart.png" alt="Carrinho" />
+      <span id="cart-count-badge">0</span>
+    </a>
+  </div>
+</header>
+
+<!-- Banner -->
+<section class="banner">
+  <img src="./images/banner.jpeg" alt="Banner" />
+</section>
+
+<!-- Filter -->
+<section class="filter">
+  <img src="./images/filter.png" alt="Filtros" />
+  <span>Produtos</span>
+</section>
+
+<!-- Products -->
+<section class="products" id="produtos-ir">
+  <div class="product">
+    <img class="image" src="./images/item1.jpeg" alt="Produto 1" />
+    <h3>Vestido Lissandra</h3>
+    <p>R$1.295,00</p>
+    <button class="add-to-cart" data-name="Vestido Lissandra" data-price="1295.00">
+      Comprar
+    </button>
+  </div>
+  <div class="product">
+    <img src="./images/item5.jpeg" alt="Produto 5" />
+    <h3>Vestido Grécia</h3>
+    <p>R$765,00</p>
+    <button class="add-to-cart" data-name="Vestido Grécia" data-price="765.00">
+      Comprar
+    </button>
+  </div>
+  <div class="product">
+    <img src="./images/item3.jpeg" alt="Produto 3" />
+    <h3>Vestido Anabela</h3>
+    <p>R$1.399,00</p>
+    <button class="add-to-cart" data-name="Vestido Anabela" data-price="1399.00">
+      Comprar
+    </button>
+  </div>
+  <div class="product">
+    <img class="image" src="./images/item4.jpeg" alt="Produto 4" />
+    <h3>Vestido Luna</h3>
+    <p>R$1.239,00</p>
+    <button class="add-to-cart" data-name="Vestido Luna" data-price="1239.00">
+      Comprar
+    </button>
+  </div>
+  <div class="product">
+    <img src="./images/item2.jpeg" alt="Produto 2" />
+    <h3>Calça Pantalona</h3>
+    <p>R$949,00</p>
+    <button class="add-to-cart" data-name="Calça Pantalona" data-price="949.00">
+      Comprar
+    </button>
+  </div>
+  <div class="product">
+    <img src="./images/item6.jpeg" alt="Produto 6" />
+    <h3>Vestido Alessandra</h3>
+    <p>R$479,00</p>
+    <button class="add-to-cart" data-name="Vestido Alessandra" data-price="479.00">
+      Comprar
+    </button>
+  </div>
+</section>
+
+<!-- Ver mais Button -->
+<div class="more">
+  <button>Ver mais</button>
+</div>
+
+<!-- Footer - Redes Sociais -->
+<footer class="footer-box" id="ir">
+  <ul class="social">
+    <li class="social-item"><img src="./images/instagram.png" /></li>
+    <li class="social-item"><img src="./images/facebook.png" /></li>
+    <li class="social-item"><img src="./images/pinterest.png" /></li>
+    <li class="social-item"><img src="./images/twitter.png" /></li>
+  </ul>
+</footer>
+
+<!-- Footer - Informações e Links -->
+<footer class="footer-rodape">
+  <div class="footer-container">
+    <div class="footer-info">
+      <p>
+        EcoVogue Brand - Av. Liberdade, 352, Centro - Canaã dos Carajás- PA - CNPJ: 00.000-000/0000-00
+      </p>
+    </div>
+    <hr />
+    <div class="footer-links">
+      <a href="#">mapa do site</a>
+    </div>
+    <hr />
+    <div class="footer-icons">
+      <a href="#"><img src="./images/secure.png" alt="Site Seguro" /></a>
+      <a href="#"><img src="./images/lets-encrypt.png" alt="Let's Encrypt" /></a>
+      <a href="#"><img src="./images/reclameaqui.jpeg" alt="RA 1000 ReclameAqui" /></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Side Cart Overlay -->
+<div id="side-cart-overlay"></div>
+
+<!-- Side Cart -->
+<div id="side-cart" class="side-cart">
+  <div class="side-cart-header">
+    <h2>Itens no seu Carrinho: <span id="cart-count">0</span></h2>
+    <span class="close-btn">&times;</span>
+  </div>
+  <ul id="side-cart-items"></ul>
+  <div class="side-cart-footer">
+    <p>Subtotal: R$ <span id="side-cart-total">0.00</span></p>
+    <button id="view-cart">Ver Carrinho</button>
+    <button id="checkout">Finalizar Compra</button>
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script src="./script.js"></script>
+
+</body>
+</html>
