@@ -9,7 +9,7 @@
 
 /* Corpo do DOM */
 body{
-    background-image: url("/Projetos-Pessoais/TelaRegister/img/dream_clouds.jpeg");
+    background-image: url("../img/dream_clouds.jpeg");
     min-width: 100vh;
     width: 100%;
     background-size: 100%;

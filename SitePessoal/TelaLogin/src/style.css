@@ -8,7 +8,7 @@
 }
 /* Corpo do DOM */
 body {
-    background-image: url("/Projetos-Pessoais/SitePessoal/TelaLogin/img/purple_clouds.jpeg");
+    background-image: url("../img/purple_clouds.jpeg");
     min-height: 100vh;
     width: 100%;
     background-size: 100%;
