@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Seleção de elementos do carrinho e outros elementos necessários
   const cartIcon = document.getElementById("cart-icon");
   const sideCart = document.getElementById("side-cart");
-  const closeSideCartBtn = document.querySelector(".side-cart-header .close-btn");
+  const closeSideCartBtn = document.querySelector(
+    ".side-cart-header .close-btn"
+  );
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   const sideCartItemsList = document.getElementById("side-cart-items");
   const sideCartTotalElement = document.getElementById("side-cart-total");
